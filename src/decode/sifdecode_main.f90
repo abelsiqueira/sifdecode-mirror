@@ -123,7 +123,8 @@
 
 !  open the relevant files - unix systems
 
-      OPEN( ingps, FILE = prbdat, FORM = 'FORMATTED', STATUS = 'UNKNOWN' )
+      OPEN( ingps, FILE = prbdat, FORM = 'FORMATTED', STATUS =                 &
+        'UNKNOWN', ACTION = 'READ')
       REWIND ingps
       OPEN( outda, FILE = prbout, FORM = 'FORMATTED', STATUS = 'UNKNOWN' )
       REWIND outda
